@@ -372,11 +372,15 @@ img, iframe {
 }
 
 /* cong2018 page ====== */
-#main-cong18 p {
+#cong-cong18 p {
   font-size: 1em;
   line-height: 1.2em;
   font-style: normal;
   color: navy;
+}
+
+#sthemes {
+  margin: 5px 5px;  /* put some indent for emphasis */
 }
 
 #sthemes p {
@@ -384,7 +388,6 @@ img, iframe {
   font-weight: 700;
   font-style: oblique;
   color: navy;
-  margin-left: 5px;
 }
 
 #peru {
@@ -396,30 +399,33 @@ img, iframe {
   margin-bottom: 5px;
 }
 
+#secondset {
+  transform: translate(220px, -230px);
+}
+
 #cpic2 {
-  width: 30%;
+  width: 45%;
   border: solid gray;
   /* transform: translate(20px, 40px) rotate(10deg); NOT working without full normalize */
 }
 
 #cpic3 {
-  width: 30%;
+  width: 45%;
   border: solid blue;
   /* transform: translate(220px, -45px) rotate(-10deg); NOT working without full normalize */
 }
 
 #cpic4 {
-  width: 35%;
+  width: 45%;
   border: solid green;
   /* transform: translate(20px, 35px) rotate(10deg); NOT working without full normalize */*/
-  margin-bottom: 10px;
+  
 }
 
 #cpic5 {
-  width: 35%;
+  width: 45%;
   border: solid brown;
   /* transform: translate(220px, -55px) rotate(-10deg); NOT working without full normalize */
-  margin-bottom: 10px;
 }
 
 /* end of Nilufer Anlar section ====== */
@@ -476,9 +482,13 @@ img, iframe {
     float: left;
   }
 
-  #cpic2, #cpic3, #cpic4, #cpic5  {
-    width: 20%;
+  #secondset {
     transform: none;
+  }
+
+  #cpic2, #cpic3, #cpic4, #cpic5  {
+    width: 25%;
+    transform: none;  /* clear it for bigger screens */
     float: right;
   }
   .accordion {  /* Nilufer Anlar */
@@ -491,7 +501,8 @@ img, iframe {
 
 /* for desktops and wide screens ====== */
 @media screen and (min-width: 992px) {
-  /* Nilufer Anlar */
+    
+
   #umind, #tman, #athens {
     width: 35%;
   }
