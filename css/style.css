@@ -383,11 +383,13 @@ img, iframe {
   margin: 5px 5px;  /* put some indent for emphasis */
 }
 
-#sthemes p {
+#st-list {
+  list-style-type:square;
   font-size: 0.9em;
   font-weight: 700;
   font-style: oblique;
   color: navy;
+  margin: 10px 10px;  /* put some indent for emphasis */
 }
 
 #peru {
@@ -470,6 +472,12 @@ img, iframe {
   /* Nilufer Anlar */
   #umind, #tman, #athens {
     width: 25%;
+  }
+
+  #st-list {
+    list-style-type: circle;
+    color: indigo;
+    margin: 10px 10px 10px 30px;  /* put some indent for emphasis */
   }
 
   #peru {
