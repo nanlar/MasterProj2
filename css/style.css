@@ -31,7 +31,7 @@ We assumed browser defult font size of 16px.
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color;
+  /* background-color;   Daniel needs fixing here */
   color: white;
 }
 
@@ -155,7 +155,7 @@ td {
 }
 
 /**richard's form**/
-}
+
 /*Create a horizontal list with spacing*/
 li {
   display:inline-block;
@@ -420,7 +420,7 @@ img, iframe {
 #cpic4 {
   width: 45%;
   border: solid green;
-  /* transform: translate(20px, 35px) rotate(10deg); NOT working without full normalize */*/
+  /* transform: translate(20px, 35px) rotate(10deg); NOT working without full normalize */
   
 }
 
