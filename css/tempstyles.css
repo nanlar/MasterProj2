@@ -144,7 +144,7 @@ We assumed browser defult font size of 16px.
 #hm-head {
   font-size: 50px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-display: bold;
+  font-display: 700;
 }
 
 /*===========================================================DANIEL CSS END==================================================*/
@@ -762,7 +762,7 @@ input[type="reset"]:hover {
       display: block;
     }
     /**end of registration form**/
-  
+  }
 /*===========================================================RICHARD MEDIA END===============================================*/
 /*===========================================================RICHARD MEDIA END===============================================*/
 /*===========================================================RICHARD MEDIA END===============================================*/
