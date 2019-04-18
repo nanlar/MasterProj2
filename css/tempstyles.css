@@ -294,8 +294,10 @@ iframe {
 
 /* publications page ====== */
 .pub h2 {
+  font-size: 1.1em;
+  line-height: 1.6em; 
   font-style: oblique;
-  color: teal;
+  color: indigo;
   margin-bottom: 1px;
 }
 
@@ -304,22 +306,22 @@ iframe {
 #pub3,
 #pub4,
 #pub5 {
-  background-color: mintcream;
+  background-color: #e6e6e6;
 }
 
 #dujournal {
-  background-color: ghostwhite;
+  background-color: ivory; /* NHA test #f5ecce; */
 }
 
 #dujournal h2 {
-  font-size: 1.5em;
-  line-height: 1.8em; /* at 120%, 28.8px, 28.8/16=1.8em */
-  color: maroon;
+  font-size: 1.2em;
+  color: firebrick;
 }
 
 #dujournal a {
   font-style: oblique;
   font-weight: bold;
+  color: darkred;
 }
 
 /* events page ====== */
