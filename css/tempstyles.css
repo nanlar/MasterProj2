@@ -23,7 +23,7 @@ We assumed browser defult font size of 16px.
     text-align: center;
   }
   .topnav {
-  background-color:  lightgreen;
+  background-color: silver;  /* NHA test */
   overflow: hidden;
   justify-content: center;
   
@@ -119,14 +119,16 @@ We assumed browser defult font size of 16px.
 }
 
 .footer {
-  position: fixed;
   left: 0;
+  right: 0;  /* NHA test */
   bottom: 0;
   width: 100%;
-  background-color: lightgreen;
+  background-color: silver;  /* NHA test */
   color: black;
   text-align: center;
-
+  /* clear: both;  NHA test */
+  margin-top: 20px;  /* NHA test */
+  padding: 10px;  /* NHA test */
 }
 
 #isud-img {
@@ -272,7 +274,7 @@ iframe {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-  background-color: pink; /* change the color later */
+  background-color: gray; /* NHA - color change from pink */
 }
 
 /* style the accordion panel */
@@ -293,7 +295,7 @@ iframe {
 /* publications page ====== */
 .pub h2 {
   font-style: oblique;
-  color: green;
+  color: teal;
   margin-bottom: 1px;
 }
 
@@ -312,17 +314,17 @@ iframe {
 #dujournal h2 {
   font-size: 1.5em;
   line-height: 1.8em; /* at 120%, 28.8px, 28.8/16=1.8em */
-  color: red;
+  color: maroon;
 }
 
 #dujournal a {
   font-style: oblique;
+  font-weight: bold;
 }
 
 /* events page ====== */
 #events {
-  margin-right: 5px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;  /* NHA test */
 }
 
 #e-list {
@@ -336,7 +338,6 @@ iframe {
 }
 
 #e-list li {
-  width: 95%;
   background: gainsboro;
   display: block;
   margin: 5px;
