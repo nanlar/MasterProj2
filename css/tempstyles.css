@@ -11,7 +11,7 @@ We assumed browser defult font size of 16px.
 /*===========================================================DANIEL CSS START==================================================*/
 /*===========================================================DANIEL CSS START==================================================*/
 
-/*TopNan*/
+/*TopNav*/
 
 /* Add a black background color to the top navigation */
 
@@ -244,7 +244,11 @@ iframe {
 #athens {
   width: 35%; /* for mobile friendly */
   float: right;
-  margin-left: 5px;
+  margin-left: 5px; 
+}
+
+#history {
+  padding-bottom: 50px;  /* NHA test */
 }
 
 /* constitution page ====== */
@@ -377,32 +381,21 @@ iframe {
   margin-bottom: 5px;
 }
 
-#secondset {
-  transform: translate(220px, -230px);
-}
-
 #cpic2 {
-  width: 45%;
-  border: solid gray;
+  width: 50%;
+  height: 120px;
+  float: left;
   /* transform: translate(20px, 40px) rotate(10deg); NOT working without full normalize */
 }
 
 #cpic3 {
-  width: 45%;
-  border: solid blue;
+  width: 48%;
+  height: 120px;
   /* transform: translate(220px, -45px) rotate(-10deg); NOT working without full normalize */
 }
 
-#cpic4 {
-  width: 45%;
-  border: solid green;
-  /* transform: translate(20px, 35px) rotate(10deg); NOT working without full normalize */
-}
-
-#cpic5 {
-  width: 45%;
-  border: solid brown;
-  /* transform: translate(220px, -55px) rotate(-10deg); NOT working without full normalize */
+#picset {
+  padding-bottom: 10px;  /* NHA test */
 }
 
 /* end of Nilufer Anlar section ====== */
@@ -654,8 +647,8 @@ input[type="reset"]:hover {
 /*===========================================================NELLY MEDIA STARTS===============================================*/
 /*===========================================================NELLY MEDIA STARTS===============================================*/
 
+/* Nilufer Anlar */
 @media screen and (min-width: 760px) {
-  /* Nilufer Anlar */
   #umind,
   #tman,
   #athens {
@@ -678,14 +671,8 @@ input[type="reset"]:hover {
     float: left;
   }
 
-  #secondset {
-    transform: none;
-  }
-
   #cpic2,
-  #cpic3,
-  #cpic4,
-  #cpic5 {
+  #cpic3 {
     width: 25%;
     transform: none; /* clear it for bigger screens */
     float: right;
