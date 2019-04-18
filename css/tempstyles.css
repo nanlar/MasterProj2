@@ -26,7 +26,7 @@ We assumed browser defult font size of 16px.
   background-color: silver;  /* NHA test */
   overflow: hidden;
   justify-content: center;
-  
+  font-weight: 700;  /* NHA test - bold */
 }
 
 #hm-body{
@@ -40,7 +40,7 @@ We assumed browser defult font size of 16px.
   float: left;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px;  /* NHA - fixed the bottom space issue */
   text-decoration: none;
   font-size: 17px;
 }
@@ -652,7 +652,7 @@ input[type="reset"]:hover {
   #umind,
   #tman,
   #athens {
-    width: 25%;
+    width: 30%;
   }
 
   #st-list {
@@ -673,12 +673,11 @@ input[type="reset"]:hover {
 
   #cpic2,
   #cpic3 {
-    width: 25%;
+    width: 30%;
     transform: none; /* clear it for bigger screens */
     float: right;
   }
   .accordion {
-    /* Nilufer Anlar */
     text-align: center; /* center it at bigger screens */
     transition: 0.4s;
   }
