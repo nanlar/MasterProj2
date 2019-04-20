@@ -23,13 +23,13 @@ We assumed browser defult font size of 16px.
     text-align: center;
   }
   .topnav {
-  background-color: silver;  /* NHA test */
+  background-color: silver;  /* Nelly changed color */
   overflow: hidden;
   justify-content: center;
-  font-weight: 700;  /* NHA test - bold */
+  font-weight: 700;  /* Nelly made it bold */
 }
 
-#hm-pg{  /* NHA - test Daniel's image */
+#hm-pg{  /* NHA centered the image */
   background-image: url("../media/graz.png");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -42,7 +42,7 @@ We assumed browser defult font size of 16px.
   float: left;
   display: block;
   text-align: center;
-  padding: 16px 16px;  /* NHA - fixed the bottom space issue */
+  padding: 16px 16px;  /* Nelly fixed the bottom space issue */
   text-decoration: none;
   font-size: 17px;
 }
@@ -121,22 +121,21 @@ We assumed browser defult font size of 16px.
 }
 
 .footer {
-  left: 0;
-  right: 0;  /* NHA test */
-  bottom: 0;
+  position: relative;
   width: 100%;
-  background-color: silver;  /* NHA test */
+  background-color: silver;  /* Nelly changed the color */
   color: black;
   text-align: center;
-  margin: 0 auto;  /* NHA test */
-  padding: 5px;  /* NHA test */
-  /* clear: both;  NHA test */
+  margin: 0 auto;
+  padding: 5px;
+  clear: both; /* Nelly fixed the footer. Daniel, pls do NOT change this */
 }
 
+/* Nelly: mobile logo NOT working, Daniel needs to fix it */
 #isud-img {
   width: 120px;
   height: 120px;
-  left:45%;
+  left: 45%;
 }
 
 #hm-pg {
@@ -156,8 +155,6 @@ We assumed browser defult font size of 16px.
 /*===========================================================DANIEL CSS END==================================================*/
 
 /*===========================================================NELLY CSS START==================================================*/
-/*===========================================================NELLY CSS START==================================================*/
-/*===========================================================NELLY CSS START==================================================*/
 
 /*
 We used Modular Scale Minor 3rd, 120% in the Math calculations below.
@@ -165,7 +162,7 @@ We assumed browser defult font size of 16px.
 */
 
 /* Nilufer Anlar
-Styles for my pages are listed below =================== */
+  Mobile styles for my pages are listed below =================== */
 
 /* set up font-family and other common styles */
 #body-about, #body-const, #body-pubs, #body-events, #body-cong18 {
@@ -251,7 +248,7 @@ img, iframe {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-  background-color: gray; /* NHA - color change from pink */
+  background-color: gray; /* Nelly changed the color */
 }
 
 /* style the accordion panel */
@@ -293,7 +290,7 @@ img, iframe {
 }
 
 #dujournal {
-  background-color: ivory; /* NHA test #f5ecce; */
+  background-color: ivory;  /* use different color for the journal */
 }
 
 #dujournal h2 {
@@ -309,7 +306,7 @@ img, iframe {
 
 /* ====== events page ======================= */
 #events {
-  padding-bottom: 10px;  /* NHA test */
+  padding-bottom: 10px;
 }
 
 #e-list {
@@ -331,15 +328,17 @@ img, iframe {
 }
 
 /* ====== cong2018 page ====================== */
-#cong-cong18 p {
+#main-cong18 p {
   font-size: 1em;
   line-height: 1.2em;
   font-style: normal;
   color: navy;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #sthemes {
-  margin: 5px 5px; /* put some indent for emphasis */
+  margin: 5px 5px; /* some indent for emphasis */
 }
 
 #st-list {
@@ -348,7 +347,8 @@ img, iframe {
   font-weight: 700;
   font-style: oblique;
   color: navy;
-  margin: 10px 10px; /* put some indent for emphasis */
+  margin: 10px 10px; /* some indent for emphasis */
+  padding-left: 10px;
 }
 
 #peru {
@@ -360,24 +360,7 @@ img, iframe {
   margin-bottom: 5px;
 }
 
-#cpic2 {
-  width: 50%;
-  height: 120px;
-  float: left;
-  /* transform: translate(20px, 40px) rotate(10deg); NOT working without full normalize */
-}
-
-#cpic3 {
-  width: 48%;
-  height: 120px;
-  /* transform: translate(220px, -45px) rotate(-10deg); NOT working without full normalize */
-}
-
-#picset {
-  padding-bottom: 10px;  /* NHA test */
-}
-
-/* ====== end of Nilufer Anlar section ================ */
+/* === end of Nilufer Anlar, her media queries listed later ======= */
 
 /*============== NELLY CSS END ==================================================*/
 
@@ -612,6 +595,7 @@ input[type="reset"]:hover {
 
 /*===========================================================DANIEL MEDIA ENDS===============================================*/
 
+
 /*===========================================================NELLY MEDIA STARTS===============================================*/
 
 /* Nilufer Anlar - for tablets */
@@ -630,28 +614,33 @@ input[type="reset"]:hover {
     width: 30%;
   }
 
+  #main-cong18 p {
+    font-size: 1.1em;
+    color: black;
+    padding-top: 6px;
+    padding-bottom: 6px; 
+  }
+  
   #st-list {
-    list-style-type: circle;
+    font-size: 1em;
+    list-style-type: none;
+    text-align: center;
     color: indigo;
-    margin: 10px 10px 10px 30px; /* put some indent for emphasis */
+    margin-left: 1px;
+    padding: 10px 10px;
+    background-color: lightgray;
   }
 
   #peru {
-    width: 425px;
-    height: 293px;
-    margin: 10px 10px;
+    width: 400px;
+    height: 220px;
+    margin: 10px 2px;
   }
 
   #sthemes {
-    float: left;
+    padding: 0; 
   }
-
-  #cpic2,
-  #cpic3 {
-    width: 30%;
-    transform: none; /* clear it for bigger screens */
-    /* float: right;  NHA test */
-  }
+  
   .accordion {
     text-align: center; /* center it at bigger screens */
     transition: 0.4s;
@@ -660,10 +649,10 @@ input[type="reset"]:hover {
 
 /* Nilufer Anlar - for desktops and wide screens ====== */
 @media screen and (min-width: 992px) {
-  /* fix the screen size to a max width */
+  /* set the screen size to a max width */
   #main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
     max-width: 1200px;
-    margin: 15px auto;
+    margin: 20px auto;
   }
   
   #umind {
@@ -674,17 +663,40 @@ input[type="reset"]:hover {
     width: 23%;
   }
   
-  #cpic2,
-  #cpic3 {
-    width: 25%;
-    transform: none; /* clear it for bigger screens */
-    /* float: right; */
+  #main-cong18 h2 {
+    padding-left: 10px;
+  }
+
+  #main-cong18 p {
+    font-size: 1.2em;
+    color: black;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   
-}
+  #peru {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #sthemes {
+    padding: 0 10px;
+  }
+  
+  #st-list {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    list-style-type: none;
+    color: black;
+    margin: 0;
+    padding: 20px 20px;
+    background-color: gainsboro;
+  }
 
 /*===========================================================NELLY MEDIA ENDS===============================================*/
-/*===========================================================NELLY MEDIA ENDS===============================================*/
-/*===========================================================NELLY MEDIA ENDS===============================================*/
+
 
 /*===========================================================RICHARD MEDIA START===============================================*/
 /*===========================================================RICHARD MEDIA START===============================================*/
