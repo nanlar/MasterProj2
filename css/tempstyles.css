@@ -29,9 +29,11 @@ We assumed browser defult font size of 16px.
   font-weight: 700;  /* NHA test - bold */
 }
 
-#hm-body{
-    background-image: url("peru.png");
-    
+#hm-pg{  /* NHA - test Daniel's image */
+  background-image: url("../media/graz.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; 
 }
 
 /* Style the links inside the navigation bar */
@@ -126,9 +128,9 @@ We assumed browser defult font size of 16px.
   background-color: silver;  /* NHA test */
   color: black;
   text-align: center;
+  margin: 0 auto;  /* NHA test */
+  padding: 5px;  /* NHA test */
   /* clear: both;  NHA test */
-  margin-top: 20px;  /* NHA test */
-  padding: 10px;  /* NHA test */
 }
 
 #isud-img {
@@ -166,61 +168,32 @@ We assumed browser defult font size of 16px.
 Styles for my pages are listed below =================== */
 
 /* set up font-family and other common styles */
-#body-about,
-#body-const,
-#body-pubs,
-#body-events,
-#body-cong18 {
+#body-about, #body-const, #body-pubs, #body-events, #body-cong18 {
   font-family: "Times New Roman", Georgia, Serif;
   background-color: whitesmoke;
 }
 
-#main-about,
-#main-const,
-#main-pubs,
-#main-events,
-#main-cong18 {
+#main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
   font-size: 1em; /* 16px, (16px/16px=1em) */
   line-height: 1.2em; /* 120% at 19.2px, (19.2/16px=1.2) */
-  margin: 10px;
+  margin: 10px 10px;;
 }
 
-h1 {
-  font-size: 1.5em; /* 24px, (24px/16px=1.5em) */
-  line-height: 1.81em; /* 120% at ~29px, (29px/16px=1.81em) */
-  font-weight: 700; /* for bold effect*/
-}
-
-h2 {
+#main-about h2, #main-const h2, #main-pubs h2, #main-events h2, #main-cong18 h2 {
   font-size: 1.25em; /* 20px, (20px/16px=1.25em) */
   line-height: 1.5em; /* 120% at 24px, (24px/16px=1.15em) */
   font-weight: 700; /* for bold */
   margin: 0.5em 0 0.5em 0; /* 8px, (8px/16px=0.5em) */
 }
 
-h3 {
-  font-size: 1em; /* 16px, (16px/16px=1em) */
-  line-height: 1.25em; /* 20px, (20px/16px=1.25em) */
-  font-weight: 700; /* for bold */
-  margin: 0.5em 0 0.5em 0; /* 8px, (8px/16px=0.5em) */
-}
-
-p {
-  font-family: "Times New Roman", Georgia, Serif;
-  font-size: 1em; /* 16px, (16px/16px=1em) */
-  line-height: 1.2em; /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0 0 0.25em 0; /* ~4px, (4px/16px=0.25em) */
-}
-
-img,
-iframe {
+img, iframe {
   position: relative;
   display: block;
   border: none;
   width: 95%; /* for better user experience */
 }
 
-/* about page ====== */
+/* ====== about page ====================== */
 #umind {
   display: block;
   width: 35%;
@@ -247,11 +220,11 @@ iframe {
   margin-left: 5px; 
 }
 
-#history {
-  padding-bottom: 50px;  /* NHA test */
+#qlist {
+  margin: 10px;
 }
 
-/* constitution page ====== */
+/* ====== constitution page ================= */
 #constitution p {
   color: royalblue;
   font-style: oblique;
@@ -296,13 +269,19 @@ iframe {
   margin-top: 1em; /* at 16px */
 }
 
-/* publications page ====== */
+/* ====== publications page ======================= */
 .pub h2 {
   font-size: 1.1em;
   line-height: 1.6em; 
   font-style: oblique;
   color: indigo;
-  margin-bottom: 1px;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+.pub p {
+  padding-right: 10px;
+  padding-left:  10px;
 }
 
 #pub1,
@@ -328,7 +307,7 @@ iframe {
   color: darkred;
 }
 
-/* events page ====== */
+/* ====== events page ======================= */
 #events {
   padding-bottom: 10px;  /* NHA test */
 }
@@ -351,7 +330,7 @@ iframe {
   font-style: oblique;
 }
 
-/* cong2018 page ====== */
+/* ====== cong2018 page ====================== */
 #cong-cong18 p {
   font-size: 1em;
   line-height: 1.2em;
@@ -398,15 +377,11 @@ iframe {
   padding-bottom: 10px;  /* NHA test */
 }
 
-/* end of Nilufer Anlar section ====== */
+/* ====== end of Nilufer Anlar section ================ */
 
-/*===========================================================NELLY CSS END==================================================*/
-/*===========================================================NELLY CSS END==================================================*/
-/*===========================================================NELLY CSS END==================================================*/
+/*============== NELLY CSS END ==================================================*/
 
-/*===========================================================RICHARD CSS START==================================================*/
-/*===========================================================RICHARD CSS START==================================================*/
-/*===========================================================RICHARD CSS START==================================================*/
+/*======= RICHARD CSS START =================================================*/
 
 /**richard's form**/
 
@@ -584,11 +559,7 @@ input[type="reset"]:hover {
 /** end of reg form**/
 
 /*===========================================================RICHARD CSS END==================================================*/
-/*===========================================================RICHARD CSS END==================================================*/
-/*===========================================================RICHARD CSS END==================================================*/
 
-/*===========================================================DANIEL MEDIA START===============================================*/
-/*===========================================================DANIEL MEDIA START===============================================*/
 /*===========================================================DANIEL MEDIA START===============================================*/
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
@@ -640,15 +611,19 @@ input[type="reset"]:hover {
 }
 
 /*===========================================================DANIEL MEDIA ENDS===============================================*/
-/*===========================================================DANIEL MEDIA ENDS===============================================*/
-/*===========================================================DANIEL MEDIA ENDS===============================================*/
 
 /*===========================================================NELLY MEDIA STARTS===============================================*/
-/*===========================================================NELLY MEDIA STARTS===============================================*/
-/*===========================================================NELLY MEDIA STARTS===============================================*/
 
-/* Nilufer Anlar */
+/* Nilufer Anlar - for tablets */
 @media screen and (min-width: 760px) {
+  
+  #main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
+    max-width: 1200px;
+    margin: 15px 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
   #umind,
   #tman,
   #athens {
@@ -675,7 +650,7 @@ input[type="reset"]:hover {
   #cpic3 {
     width: 30%;
     transform: none; /* clear it for bigger screens */
-    float: right;
+    /* float: right;  NHA test */
   }
   .accordion {
     text-align: center; /* center it at bigger screens */
@@ -683,13 +658,28 @@ input[type="reset"]:hover {
   }
 }
 
-/* for desktops and wide screens ====== */
+/* Nilufer Anlar - for desktops and wide screens ====== */
 @media screen and (min-width: 992px) {
-  #umind,
-  #tman,
-  #athens {
-    width: 35%;
+  /* fix the screen size to a max width */
+  #main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
+    max-width: 1200px;
+    margin: 15px auto;
   }
+  
+  #umind {
+    width: 25%;
+  }
+  
+  #tman, #athens {
+    width: 23%;
+  }
+  
+  #cpic2,
+  #cpic3 {
+    width: 25%;
+    transform: none; /* clear it for bigger screens */
+    /* float: right; */
+  
 }
 
 /*===========================================================NELLY MEDIA ENDS===============================================*/
