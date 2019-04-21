@@ -18,8 +18,8 @@ We assumed browser defult font size of 16px.
 
 .header {
     float: top;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1em;  /* 16px, (16px/16px=1em) */
+    padding-bottom: 1em;  /* 16px, (16px/16px=1em) */
     text-align: center;
   }
   .topnav {
@@ -42,9 +42,10 @@ We assumed browser defult font size of 16px.
   float: left;
   display: block;
   text-align: center;
-  padding: 16px 16px;  /* Nelly fixed the bottom space issue */
+  padding: 1em 1em;  /* Nelly fixed the bottom space issue */
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;  /* at 120%, Nelly fixed the bottom space issue */
 }
 
 /* Add an active class to highlight the current page */
@@ -67,11 +68,11 @@ We assumed browser defult font size of 16px.
 /* Style the dropdown button to fit inside the topnav */
 
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
   border: none;
   outline: none;
   color: black;
-  padding: 14px 16px;
+  padding: 1em 1em;  /* 16px, (16px/16px=1em) */
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -84,7 +85,7 @@ We assumed browser defult font size of 16px.
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5em 1em 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -93,7 +94,7 @@ We assumed browser defult font size of 16px.
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 0.75em 1em;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -142,10 +143,10 @@ We assumed browser defult font size of 16px.
   text-align: center;
 }
 #hm-pg p {
-  font-size: 20px;
+  font-size: 1.25em;  /* 20px, (20px/16px=1em) */
 }
 #hm-head {
-  font-size: 50px;
+  font-size: 3em;  /* at 48px, 48/16=3em */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
 }
@@ -173,7 +174,7 @@ We assumed browser defult font size of 16px.
 #main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
   font-size: 1em; /* 16px, (16px/16px=1em) */
   line-height: 1.2em; /* 120% at 19.2px, (19.2/16px=1.2) */
-  margin: 10px 10px;;
+  margin: 0.625em 0.625em;  /* at 10px, (10px/16px)=0.625em */
 }
 
 #main-about h2, #main-const h2, #main-pubs h2, #main-events h2, #main-cong18 h2 {
@@ -192,14 +193,14 @@ img, iframe {
 
 /* ====== about page ====================== */
 #main-about p {
-  padding-bottom: 10px;
+  padding-bottom: 0.625em;  /* at 10px */
 }
 
 #umind {
   display: block;
   width: 35%;
   float: right;
-  margin-left: 5px;
+  margin-left: 0.4em;
 }
 
 #qlist p {
@@ -213,24 +214,24 @@ img, iframe {
 #tman {
   width: 35%; /* for mobile friendly */
   float: left;
-  margin-right: 5px;
+  margin-right: 0.4em;
 }
 
 #athens {
   width: 35%; /* for mobile friendly */
   float: right;
-  margin-left: 5px; 
+  margin-left: 0.4em; 
 }
 
 #qlist {
-  margin: 10px;
+  margin: 0.625em;  /* at 10px */
 }
 
 /* ====== constitution page ================= */
 #constitution p {
   color: navy;
   font-style: oblique;
-  padding-bottom: 8px;
+  padding-bottom: 0.5em;
 }
 
 /* use accordion button for the articles */
@@ -242,7 +243,7 @@ img, iframe {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 10px;
+  padding: 0.625em;  /* at 10px */
   width: 98%;
   text-align: left; /* center it at bigger screens */
   border: 1px solid maroon;
@@ -259,7 +260,7 @@ img, iframe {
 
 /* style the accordion panel */
 .panel {
-  padding: 0 12px;
+  padding: 0 0.75em;
   background-color: white;
   display: none;
   overflow: hidden;
@@ -279,13 +280,13 @@ img, iframe {
   font-style: oblique;
   color: indigo;
   margin-bottom: 0;
-  padding-left: 10px;
+  padding-left: 0.625em;
 }
 
 .pub p {
-  padding-bottom: 5px;
-  padding-right: 10px;
-  padding-left:  10px;
+  padding-bottom: 0.4em;
+  padding-right: 0.625em;
+  padding-left:  0.625em;
 }
 
 #pub1,
@@ -313,7 +314,7 @@ img, iframe {
 
 /* ====== events page ======================= */
 #events {
-  padding-bottom: 10px;
+  padding-bottom: 0.625em;
 }
 
 #e-list {
@@ -321,16 +322,16 @@ img, iframe {
   background: silver;
   list-style-type: square;
   color: navy;
-  padding: 10px;
-  margin-bottom: 5px;
-  margin-right: 5px;
+  padding: 0.625em;
+  margin-bottom: 0.4em;
+  margin-right: 0.4em;
 }
 
 #e-list li {
   background: gainsboro;
   display: block;
-  margin: 5px;
-  padding: 5px;
+  margin: 0.4em;
+  padding: 0.4em;
   font-style: oblique;
 }
 
@@ -340,12 +341,12 @@ img, iframe {
   line-height: 1.2em;
   font-style: normal;
   color: black;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 #sthemes {
-  margin: 5px 5px; /* some indent for emphasis */
+  margin: 0.4em 0.4em; /* some indent for emphasis */
 }
 
 #st-list {
@@ -354,8 +355,8 @@ img, iframe {
   font-weight: 500;
   font-style: oblique;
   color: navy;
-  margin: 10px 10px; /* some indent for emphasis */
-  padding-left: 10px;
+  margin: 0.625em 0.625em; /* some indent for emphasis */
+  padding-left: 0.625em;
 }
 
 #peru {
@@ -364,7 +365,7 @@ img, iframe {
   position: relative;
   float: left;
   margin-right: 7px;
-  margin-bottom: 5px;
+  margin-bottom: 0.4em;
 }
 
 /* === end of Nilufer Anlar, her media queries listed later ======= */
@@ -408,8 +409,8 @@ td {
   text-align: left;
   border: 1px solid cornsilk;
   border-radius: 4px;
-  margin-bottom: 10px;
-  padding: 0px 10px;
+  margin-bottom: 0.625em;
+  padding: 0px 0.625em;
   font-family: "Raleway", sans-serif;
 }
 
@@ -417,8 +418,8 @@ td {
   text-align: center;
   border: 1px solid cornsilk;
   border-radius: 4px;
-  margin-bottom: 10px;
-  padding: 0px 10px;
+  margin-bottom: 0.625em;
+  padding: 0px 0.625em;
   font-size: 0.95em;
   font-family: "Raleway", sans-serif;
 }
@@ -609,10 +610,9 @@ input[type="reset"]:hover {
 @media screen and (min-width: 760px) {
   
   #main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
-    max-width: 1200px;
-    margin: 15px 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin: 1em 1em;
+    padding-right: 1em;
+    padding-left: 1em;
   }
   
   #umind,
@@ -623,14 +623,14 @@ input[type="reset"]:hover {
   
   #qlist p {
     font-size: 0.9em;
-    margin-left: 10px;
+    margin-left: 0.625em;
   }
 
   #main-cong18 p {
     font-size: 1.1em;
     color: black;
-    padding-top: 6px;
-    padding-bottom: 6px; 
+    padding-top: 0.4em;
+    padding-bottom: 0.4em; 
   }
   
   #st-list {
@@ -639,15 +639,15 @@ input[type="reset"]:hover {
     list-style-type: none;
     text-align: center;
     color: indigo;
-    margin-left: 1px;
-    padding: 10px 10px;
+    margin-left: 0;
+    padding: 0.625em 0.625em;
     background-color: lightgray;
   }
 
   #peru {
     width: 400px;
     height: 220px;
-    margin: 10px 2px;
+    margin: 0.625em 0.25em;
   }
 
   #sthemes {
@@ -664,8 +664,8 @@ input[type="reset"]:hover {
 @media screen and (min-width: 992px) {
   /* set the screen size to a max width */
   #main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 75em;  /* at 1200px */
+    margin: 1.25em auto;
   }
   
   #umind {
@@ -678,29 +678,29 @@ input[type="reset"]:hover {
   
   #qlist p {
     font-size: 1em;
-    margin-left: 20px;
+    margin-left: 1.25em;  /* at 20px */
   }
   
   #main-cong18 h2 {
-    padding-left: 10px;
+    padding-left: 0.625em;
   }
 
   #main-cong18 p {
     font-size: 1.2em;
     color: black;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 0.5em;  /* at 8px */
+    padding-bottom: 0.5em;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
   }
   
   #peru {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.625em;
+    margin-right: 0.625em;
   }
 
   #sthemes {
-    padding: 0 10px;
+    padding: 0 0.625em;
   }
   
   #st-list {
@@ -709,7 +709,7 @@ input[type="reset"]:hover {
     list-style-type: none;
     color: black;
     margin: 0;
-    padding: 20px 20px;
+    padding: 1.25em 1.25em;  /* at 20px */
     background-color: gainsboro;
   }
 }
