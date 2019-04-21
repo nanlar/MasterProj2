@@ -191,6 +191,10 @@ img, iframe {
 }
 
 /* ====== about page ====================== */
+#main-about p {
+  padding-bottom: 10px;
+}
+
 #umind {
   display: block;
   width: 35%;
@@ -203,6 +207,7 @@ img, iframe {
   font-weight: 700;
   font-style: oblique;
   color: darkred;
+  padding-bottom: 0;
 }
 
 #tman {
@@ -223,8 +228,9 @@ img, iframe {
 
 /* ====== constitution page ================= */
 #constitution p {
-  color: royalblue;
+  color: navy;
   font-style: oblique;
+  padding-bottom: 8px;
 }
 
 /* use accordion button for the articles */
@@ -261,7 +267,7 @@ img, iframe {
 
 #amend {
   font-size: 0.8em;
-  color: royalblue;
+  color: navy;
   font-style: oblique;
   margin-top: 1em; /* at 16px */
 }
@@ -277,6 +283,7 @@ img, iframe {
 }
 
 .pub p {
+  padding-bottom: 5px;
   padding-right: 10px;
   padding-left:  10px;
 }
@@ -332,7 +339,7 @@ img, iframe {
   font-size: 1em;
   line-height: 1.2em;
   font-style: normal;
-  color: navy;
+  color: black;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -344,7 +351,7 @@ img, iframe {
 #st-list {
   list-style-type: square;
   font-size: 0.9em;
-  font-weight: 700;
+  font-weight: 500;
   font-style: oblique;
   color: navy;
   margin: 10px 10px; /* some indent for emphasis */
@@ -613,6 +620,11 @@ input[type="reset"]:hover {
   #athens {
     width: 30%;
   }
+  
+  #qlist p {
+    font-size: 0.9em;
+    margin-left: 10px;
+  }
 
   #main-cong18 p {
     font-size: 1.1em;
@@ -623,6 +635,7 @@ input[type="reset"]:hover {
   
   #st-list {
     font-size: 1em;
+    font-weight: 500;
     list-style-type: none;
     text-align: center;
     color: indigo;
@@ -663,6 +676,11 @@ input[type="reset"]:hover {
     width: 23%;
   }
   
+  #qlist p {
+    font-size: 1em;
+    margin-left: 20px;
+  }
+  
   #main-cong18 h2 {
     padding-left: 10px;
   }
@@ -694,6 +712,7 @@ input[type="reset"]:hover {
     padding: 20px 20px;
     background-color: gainsboro;
   }
+}
 
 /*===========================================================NELLY MEDIA ENDS===============================================*/
 
