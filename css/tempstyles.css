@@ -1,4 +1,4 @@
-/* Team Champions-League, style.css */
+/* Team Champions-League, tempstyles.css */
 
 /*
 We used Modular Scale Minor 3rd, 120% in the Math calculations below.
@@ -15,25 +15,17 @@ We assumed browser defult font size of 16px.
 
 /* Add a black background color to the top navigation */
 
-
 .header {
-    float: top;
-    padding-top: 1em;  /* 16px, (16px/16px=1em) */
-    padding-bottom: 1em;  /* 16px, (16px/16px=1em) */
-    text-align: center;
-  }
-  .topnav {
+  float: top;
+  /* padding-top: 1em;  /* 16px, (16px/16px=1em) */ */
+  /* padding-bottom: 1em;  /* 16px, (16px/16px=1em) */ */
+  text-align: center;
+}
+.topnav {
   background-color: silver;  /* Nelly changed color */
   overflow: hidden;
   justify-content: center;
   font-weight: 700;  /* Nelly made it bold */
-}
-
-#hm-pg{  /* NHA centered the image */
-  background-image: url("../media/graz.png");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; 
 }
 
 /* Style the links inside the navigation bar */
@@ -52,11 +44,8 @@ We assumed browser defult font size of 16px.
 
 .active {
   background-color:yellow;
-  
-} 
 
-/*Hide the link that should open and close the topnav on small screens */
-
+}
 
 /* Dropdown container - needed to position the dropdown content */
 
@@ -132,23 +121,52 @@ We assumed browser defult font size of 16px.
   clear: both; /* Nelly fixed the footer. Daniel, pls do NOT change this */
 }
 
-/* Nelly: mobile logo NOT working, Daniel needs to fix it */
 #isud-img {
   width: 120px;
   height: 120px;
-  left: 45%;
 }
 
-#hm-pg {
+.header {
+  margin-left: 0.5em;
+}
+
+.intro h1, h2, h3 {
   text-align: center;
-}
-#hm-pg p {
-  font-size: 1.25em;  /* 20px, (20px/16px=1em) */
-}
-#hm-head {
-  font-size: 3em;  /* at 48px, 48/16=3em */
+  margin: 0.3em;
+  font-weight: 500;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 700;
+}
+
+.intro h1, h2 {
+  font-size: 1.5em;  /* at 24px, 24/16=1.5em */
+  color: indigo;
+}
+
+.intro h3 {
+  font-size: 1.2em;  /* at 19px, 24/16=1.5em */
+  line-height: 1.4em;  /* ~ 120% */
+}
+
+.intro a {
+  color: blue;
+  font-style: oblique;
+}
+
+#iconspics {
+  width: 20%;
+  margin-left: 3em;
+}
+
+#bannerpics, #grazpics {
+  width: 100%;
+}
+
+#hm-body {
+  background-color: grainsboro;
+}
+
+#hm-pg p {
+   font-size: 1.25em;  /* 20px, (20px/16px=1em) */
 }
 
 /*===========================================================DANIEL CSS END==================================================*/
@@ -163,7 +181,7 @@ We assumed browser defult font size of 16px.
 */
 
 /* Nilufer Anlar
-  Mobile styles for my pages are listed below =================== */
+Mobile styles for my pages are listed below =================== */
 
 /* set up font-family and other common styles */
 #body-about, #body-const, #body-pubs, #body-events, #body-cong18 {
@@ -220,7 +238,7 @@ img, iframe {
 #athens {
   width: 35%; /* for mobile friendly */
   float: right;
-  margin-left: 0.4em; 
+  margin-left: 0.4em;
 }
 
 #qlist {
@@ -276,7 +294,7 @@ img, iframe {
 /* ====== publications page ======================= */
 .pub h2 {
   font-size: 1.1em;
-  line-height: 1.6em; 
+  line-height: 1.6em;
   font-style: oblique;
   color: indigo;
   margin-bottom: 0;
@@ -554,7 +572,7 @@ input[type="reset"]:hover {
 /*===========================================================DANIEL MEDIA START===============================================*/
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
-  This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 
 @media screen and (min-width: 600px) {
   .topnav.responsive {
@@ -608,19 +626,19 @@ input[type="reset"]:hover {
 
 /* Nilufer Anlar - for tablets */
 @media screen and (min-width: 760px) {
-  
+
   #main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
     margin: 1em 1em;
     padding-right: 1em;
     padding-left: 1em;
   }
-  
+
   #umind,
   #tman,
   #athens {
     width: 30%;
   }
-  
+
   #qlist p {
     font-size: 0.9em;
     margin-left: 0.625em;
@@ -630,9 +648,9 @@ input[type="reset"]:hover {
     font-size: 1.1em;
     color: black;
     padding-top: 0.4em;
-    padding-bottom: 0.4em; 
+    padding-bottom: 0.4em;
   }
-  
+
   #st-list {
     font-size: 1em;
     font-weight: 500;
@@ -651,9 +669,9 @@ input[type="reset"]:hover {
   }
 
   #sthemes {
-    padding: 0; 
+    padding: 0;
   }
-  
+
   .accordion {
     text-align: center; /* center it at bigger screens */
     transition: 0.4s;
@@ -667,20 +685,20 @@ input[type="reset"]:hover {
     max-width: 75em;  /* at 1200px */
     margin: 1.25em auto;
   }
-  
+
   #umind {
     width: 25%;
   }
-  
+
   #tman, #athens {
     width: 23%;
   }
-  
+
   #qlist p {
     font-size: 1em;
     margin-left: 1.25em;  /* at 20px */
   }
-  
+
   #main-cong18 h2 {
     padding-left: 0.625em;
   }
@@ -693,7 +711,7 @@ input[type="reset"]:hover {
     padding-left: 0.625em;
     padding-right: 0.625em;
   }
-  
+
   #peru {
     margin-left: 0.625em;
     margin-right: 0.625em;
@@ -702,7 +720,7 @@ input[type="reset"]:hover {
   #sthemes {
     padding: 0 0.625em;
   }
-  
+
   #st-list {
     font-size: 1.1em;
     line-height: 1.3em;
@@ -722,57 +740,57 @@ input[type="reset"]:hover {
 /*===========================================================RICHARD MEDIA START===============================================*/
 
 @media screen and (min-width: 768px) {
-    /* add styles here */
-    /**Styles for registration form**/
-    form {
-      width: 70%;
-      margin: auto;
-    }
-    input[type="submit"] {
-      width: 70%;
-      margin-right: 15%;
-      margin-left: 15%;
-    }
-    input[type="reset"] {
-      width: 30%;
-      margin-right: 35%;
-      margin-left: 35%;
-    }
-  
+  /* add styles here */
+  /**Styles for registration form**/
+  form {
+    width: 70%;
+    margin: auto;
+  }
+  input[type="submit"] {
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+  input[type="reset"] {
+    width: 30%;
+    margin-right: 35%;
+    margin-left: 35%;
   }
 
-  @media screen and (min-width: 992px) {
-    /* add styles here */
-    /**Styles for registration form**/
-    form {
-      width: 40%;
-      margin: auto;
-      padding: 20px;
-    }
-    input[type="submit"] {
-      width: 60%;
-      margin-right: 20%;
-      margin-left: 20%;
-    }
-    input[type="reset"] {
-      width: 20%;
-      margin-right: 40%;
-      margin-left: 40%;
-    }
-    .info {
-      padding: 20px;
-    }
-    .days {
-      padding: 20px;
-    }
-    .logo {
-      width: 30%;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-    /**end of registration form**/
+}
+
+@media screen and (min-width: 992px) {
+  /* add styles here */
+  /**Styles for registration form**/
+  form {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
   }
+  input[type="submit"] {
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  input[type="reset"] {
+    width: 20%;
+    margin-right: 40%;
+    margin-left: 40%;
+  }
+  .info {
+    padding: 20px;
+  }
+  .days {
+    padding: 20px;
+  }
+  .logo {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  /**end of registration form**/
+}
 /*===========================================================RICHARD MEDIA END===============================================*/
 /*===========================================================RICHARD MEDIA END===============================================*/
 /*===========================================================RICHARD MEDIA END===============================================*/
