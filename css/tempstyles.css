@@ -17,8 +17,8 @@ We assumed browser defult font size of 16px.
 
 .header {
   float: top;
-  /* padding-top: 1em;  /* 16px, (16px/16px=1em) */ */
-  /* padding-bottom: 1em;  /* 16px, (16px/16px=1em) */ */
+  /* padding-top: 1em;  /* 16px, (16px/16px=1em) */
+  /* padding-bottom: 1em;  /* 16px, (16px/16px=1em) */
   text-align: center;
 }
 .topnav {
@@ -162,7 +162,7 @@ We assumed browser defult font size of 16px.
 }
 
 #hm-body {
-  background-color: grainsboro;
+  background-color: whitesmoke;
 }
 
 #hm-pg p {
